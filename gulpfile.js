@@ -6,8 +6,8 @@ const cleanCSS = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
 const browsersync = require("browser-sync");
 
-// const dist = "./dist";
-const dist = "D:/ospanel/domains/Food";
+const dist = "./dist";
+// const dist = "D:/ospanel/domains/Food";
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
@@ -16,7 +16,7 @@ gulp.task("copy-html", () => {
 });
 
 gulp.task("build-js", () => {
-    return gulp.src("./src/js/main.js")
+    return gulp.src("./src/js/script.js")
                 .pipe(webpack({
                     mode: 'development',
                     output: {
